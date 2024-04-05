@@ -28,7 +28,7 @@
       "ip" : "192.168.1.130",
       "pcl_data_type" : 1,
       "pattern_mode" : 0,
-      "frame_id" : "front_lidar_link",
+      "frame_id" : "back_lidar_link",
       "extrinsic_parameter" : {
         "roll": 0.0,
         "pitch": 0.0,
@@ -42,7 +42,7 @@
       "ip" : "192.168.1.183",
       "pcl_data_type" : 1,
       "pattern_mode" : 0,
-      "frame_id" : "back_lidar_link",
+      "frame_id" : "front_lidar_link",
       "extrinsic_parameter" : {
         "roll": 0.0,
         "pitch": 0.0,
