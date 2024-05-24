@@ -514,15 +514,15 @@ void Lddc::PublishImuData(LidarImuDataQueue& imu_data_queue, const uint8_t index
   Publisher<ImuMsg>::SharedPtr publisher_ptr = std::dynamic_pointer_cast<Publisher<ImuMsg>>(GetCurrentImuPublisher(index));
 #endif
 
-  if (kOutputToRos == output_type_) {
-    publisher_ptr->publish(imu_msg);
-  } else {
-#ifdef BUILDING_ROS1
-    if (bag_ && enable_imu_bag_) {
-      bag_->write(publisher_ptr->getTopic(), ros::Time(timestamp / 1000000000.0), imu_msg);
-    }
-#endif
-  }
+//   if (kOutputToRos == output_type_) {
+//     publisher_ptr->publish(imu_msg);
+//   } else {
+// #ifdef BUILDING_ROS1
+//     if (bag_ && enable_imu_bag_) {
+//       bag_->write(publisher_ptr->getTopic(), ros::Time(timestamp / 1000000000.0), imu_msg);
+//     }
+// #endif
+//   }
 }
 
 #ifdef BUILDING_ROS2
