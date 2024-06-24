@@ -1,4 +1,3 @@
-
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
@@ -41,7 +40,7 @@ def generate_launch_description():
         name='livox_lidar_publisher',
         output='screen',
         parameters=livox_ros2_params, 
-        remappings=[("/livox/lidar_192_168_1_102", "/front_lidar/points")],
+        remappings=[("/livox/lidar_192_168_1_102", "/front_lidar/points"), ("/livox/lidar_192_168_1_130", "/back_lidar/points")],
         )
 
     livox_rviz = Node(
