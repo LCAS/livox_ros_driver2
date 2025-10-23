@@ -41,7 +41,7 @@ def generate_launch_description():
         if len(lidar_entries) < 2:
             raise RuntimeError(f"Expected at least 2 lidar entries, found {len(lidar_entries)}")
 
-        ips = [lidar["ip"] for lidar in lidar_entries]
+        ips = [lidar.get("ip") for lidar in lidar_entries]
         if not all(ips):
             raise RuntimeError("One or more lidar entries have no 'ip' field defined")
 
