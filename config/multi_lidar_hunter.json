@@ -25,7 +25,7 @@
   },
   "lidar_configs" : [
     {
-      "ip" : "192.168.1.102",
+      "ip" : "192.168.1.116",
       "pcl_data_type" : 1,
       "pattern_mode" : 0,
       "frame_id" : "front_lidar_link",
@@ -39,7 +39,7 @@
       }
     },
     {
-      "ip" : "192.168.1.130",
+      "ip" : "192.168.1.139",
       "pcl_data_type" : 1,
       "pattern_mode" : 0,
       "frame_id" : "back_lidar_link",
