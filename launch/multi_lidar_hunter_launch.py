@@ -40,7 +40,7 @@ def generate_launch_description():
         name='livox_lidar_publisher',
         output='screen',
         parameters=livox_ros2_params, 
-        remappings=[("/livox/lidar_192_168_1_102", "/front_lidar/points"), ("/livox/lidar_192_168_1_130", "/back_lidar/points")],
+        remappings=[("/livox/lidar_192_168_1_116", "/front_lidar/points"), ("/livox/lidar_192_168_1_139", "/back_lidar/points")],
         )
 
     livox_rviz = Node(
